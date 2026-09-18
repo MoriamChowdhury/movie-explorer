@@ -4,6 +4,8 @@ A responsive Movie Explorer built with React, Vite, and Tailwind CSS. Browse sho
 search by title, and view details in a modal — all powered by the free
 [TVMaze API](https://www.tvmaze.com/api) (no API key required).
 
+Live Link:https://sunny-maamoul-5504d6.netlify.app/
+
 ## Features
 
 - **Home page** — navbar, hero banner with CTA, footer
