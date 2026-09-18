@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-ink text-paper font-body antialiased;
+  }
+  ::selection {
+    @apply bg-marquee text-ink;
+  }
+  :focus-visible {
+    outline: 2px solid #e8b75a;
+    outline-offset: 3px;
+  }
+}
+
+@layer utilities {
+  .perf-edge {
+    background-image: radial-gradient(circle at 10px 10px, #0e0e12 3px, transparent 3.5px);
+    background-size: 20px 20px;
+    background-position: left center;
+  }
+  .tear-line {
+    background-image: repeating-linear-gradient(
+      to right,
+      #3a3a44 0,
+      #3a3a44 8px,
+      transparent 8px,
+      transparent 16px
+    );
+  }
+  .film-strip {
+    background-image: linear-gradient(#0e0e12, #0e0e12), linear-gradient(#0e0e12, #0e0e12);
+    background-repeat: repeat-y;
+    background-size: 100% 14px;
+    background-position: left top, right top;
+  }
+}
